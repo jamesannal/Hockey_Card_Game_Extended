@@ -6,24 +6,53 @@ package hockey.hockeygame;
 
 class Card {
     private final Player playername;
+    private int shot;
     private int value;
+    private int stickhandling;
+    private int checking;
+    private int strength;
+    private int skating;
 
-    public Card(Player playername, int value) {
+    public Card(Player playername, int value, int stickhandling, int shot, int checking, int strength, int skating) {
         this.playername = playername;
         this.value = value;
+        this.stickhandling = stickhandling;
+        this.shot = shot;
+        this.checking = checking;
+        this.strength = strength;
+        this.skating = skating;
     }
 
-    public int getValue() {
+    int getValue() {
         return this.value;
     }
 
-    public Player getPlayerName() {
+    Player getPlayerName() {
         return this.playername;
     }
 
-    public String getPlayerDisplay() {
+    String getPlayerDisplay() {
         return this.playername + "(" + this.value +")";
     }
 
 
+    public int getPlayerStickhandling() {
+        return this.stickhandling;
+    }
+
+    public int getPlayerChecking() {
+        return this.checking;
+    }
+
+    public int getPlayerStrength() {
+        return this.strength;
+    }
+
+    public int getPlayerSkating() {
+        return this.skating;
+    }
+
+    public int getPlayerShooting() {
+        return this.shot;
+    }
 }

@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">HockeyGame</string>
+    <string name="app_name">Hockey Card Game</string>
     <string name="action_settings">Settings</string>
+    <string name="title"> The Hockey Card Game</string>
+    <string name="game_explain">Press the draft button to draft two players. Your opponent will simultaneously draft two players to play against you. If you think you have superior players press play to see if you win. Press draft again if you aren\'t feeling confident about the result.</string>
+    <string name="draft_your_player">DRAFT</string>
+    <string name="show">""</string>
+    <string name="playerShow">""</string>
+    <string name="play_them">PLAY</string>
+    <string name="off_the_glass">OFF THE GLASS</string>
 </resources>

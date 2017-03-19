@@ -19,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="hockey.hockeygame.GameActivity"
+            android:label="Return to start screen"
+            android:parentActivityName=".StartActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -15,7 +15,7 @@ public class CardTest {
 
     @Before
     public void before(){
-        card = new Card(WEBER, WEBER.value);
+        card = new Card(WEBER, WEBER.value, WEBER.stickhandling, WEBER.shot, WEBER.checking, WEBER.strength, WEBER.skating);
     }
 
     @Test
@@ -33,4 +33,28 @@ public class CardTest {
         assertEquals("WEBER(97)", card.getPlayerDisplay());
     }
 
+    @Test
+    public void canGetPlayerStickhandling() {
+        assertEquals(80, card.getPlayerStickhandling());
+    }
+
+    @Test
+    public void canGetPlayerShooting(){
+        assertEquals(95, card.getPlayerShooting());
+    }
+
+    @Test
+    public void canGetPlayerChecking(){
+        assertEquals(95, card.getPlayerChecking());
+    }
+
+    @Test
+    public void canGetPlayerStrength(){
+        assertEquals(99, card.getPlayerStrength());
+    }
+
+    @Test
+    public void canGetPlayerSkating() {
+        assertEquals(70, card.getPlayerSkating());
+    }
 }

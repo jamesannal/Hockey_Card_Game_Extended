@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@android:color/holo_blue_light"
     android:fontFamily="monospace"
-    tools:context="hockey.hockeygame.StartActivity">
+    tools:context="hockey.hockeygame.GameActivity">
 
     <TextView
         android:id="@+id/title_text"
@@ -21,24 +21,35 @@
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"/>
 
-    <TextView
-        android:id="@+id/game_explain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70sp"
-        android:text="@string/game_explain"
-        android:textSize="30sp"
+    <Button
+        android:id="@+id/play_them"
+        android:text="@string/play_them"
+        android:onClick="onTakeThemOnButtonPressed"
+        android:layout_width="250sp"
+        android:layout_height="180sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="650sp"
+        android:textSize="50sp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:fontFamily="monospace"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:padding="10dp"
         />
 
-
     <Button
-        android:id="@+id/draft_card"
-        android:text="@string/draft_your_player"
-        android:onClick="onDraftButtonPressed"
+        android:id="@+id/off_the_glass"
+        android:text="@string/off_the_glass"
+        android:onClick="onOffTheGlassButtonPressed"
         android:layout_width="250sp"
-        android:layout_height="100sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="300sp"
+        android:layout_height="180sp"
+        android:layout_marginLeft="300sp"
+        android:layout_marginStart="300sp"
+        android:layout_marginTop="650sp"
         android:textSize="50sp"
         android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/white"
@@ -50,36 +61,6 @@
         android:padding="10dp"
 
         />
-
-    <!--<Button-->
-        <!--android:id="@+id/play_them"-->
-        <!--android:text="@string/play_them"-->
-        <!--android:onClick="onTakeThemOnButtonPressed"-->
-        <!--android:layout_width="250sp"-->
-        <!--android:layout_height="180sp"-->
-        <!--android:layout_marginLeft="10sp"-->
-        <!--android:layout_marginStart="10sp"-->
-        <!--android:layout_marginTop="650sp"-->
-        <!--android:textSize="50sp"-->
-        <!--android:background="@color/colorPrimaryDark"-->
-        <!--android:textColor="@android:color/white"-->
-        <!--android:fontFamily="monospace"-->
-        <!--/>-->
-
-    <!--<Button-->
-        <!--android:id="@+id/off_the_glass"-->
-        <!--android:text="@string/off_the_glass"-->
-        <!--android:onClick="onOffTheGlassButtonPressed"-->
-        <!--android:layout_width="250sp"-->
-        <!--android:layout_height="180sp"-->
-        <!--android:layout_marginLeft="300sp"-->
-        <!--android:layout_marginStart="300sp"-->
-        <!--android:layout_marginTop="650sp"-->
-        <!--android:textSize="50sp"-->
-        <!--android:background="@color/colorPrimaryDark"-->
-        <!--android:textColor="@android:color/white"-->
-        <!--android:fontFamily="monospace"-->
-        <!--/>-->
 
     <TextView
         android:id="@id/result_box"
@@ -103,6 +84,5 @@
         android:textAlignment="center"
         android:freezesText="true"
         android:fontFamily="monospace"/>
-
 
 </RelativeLayout>
