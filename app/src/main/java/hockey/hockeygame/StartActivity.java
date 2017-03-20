@@ -58,6 +58,7 @@ public class StartActivity extends AppCompatActivity {
 //        return super.onOptionsItemSelected(item);
 //    }
     public void onDraftButtonPressed(View button) {
+        startActivity(intent);
         Log.d(getClass().toString(), draftCard.getText().toString());
         userTeam.getCards().clear();
         computerTeam.getCards().clear();
@@ -67,7 +68,7 @@ public class StartActivity extends AppCompatActivity {
         Log.d("game.deal result", result2);
         playerShow.setText(result2);
         show.setText("");
-        startActivity(intent);
+
 
     }
 

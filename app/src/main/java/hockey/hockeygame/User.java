@@ -34,6 +34,26 @@ class User {
         return team;
     }
 
+    public int getRosterStickhandling() {
+        return team.getTeamStickhandling();
+    }
+
+    public int getRosterShot() {
+        return team.getTeamShot();
+    }
+
+    public int getRosterChecking() {
+        return team.getTeamChecking();
+    }
+
+    public int getRosterStrength() {
+        return team.getTeamStrength();
+    }
+
+    public int getRosterSkating() {
+        return team.getTeamSkating();
+    }
+
 //    public void showPlayers() {
 //        for (Card card : getTeam().getCards());
 //    }

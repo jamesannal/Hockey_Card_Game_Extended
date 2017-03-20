@@ -37,4 +37,29 @@ public class UserTest {
     public void canGetRosterScore() {
         assertEquals(88, user.getTotalValue());
     }
+
+    @Test
+    public void canGetRosterStickhandling() {
+        assertEquals(70, user.getRosterStickhandling());
+    }
+
+    @Test
+    public void canGetRosterShot() {
+        assertEquals(79, user.getRosterShot());
+    }
+
+    @Test
+    public void canGetRosterChecking() {
+        assertEquals(83, user.getRosterChecking());
+    }
+
+    @Test
+    public void canGetTeamStrength() {
+        assertEquals(87, user.getRosterStrength());
+    }
+
+    @Test
+    public void canGetTeamSkating() {
+        assertEquals(90, user.getRosterSkating());
+    }
 }

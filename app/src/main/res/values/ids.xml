@@ -7,5 +7,6 @@
     <item name="result_box" type="id">RESULT</item>
     <item name="player_box" type="id">RESULT FROM PLAYER</item>
     <item name="off_the_glass" type="id">Re-Roll</item>
+    <item name="situation_box" type="id">SITUATION</item>
 
 </resources>

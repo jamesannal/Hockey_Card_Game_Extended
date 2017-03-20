@@ -8,4 +8,5 @@
     <string name="playerShow">""</string>
     <string name="play_them">PLAY</string>
     <string name="off_the_glass">OFF THE GLASS</string>
+    <string name="situationShow">""</string>
 </resources>

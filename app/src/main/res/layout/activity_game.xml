@@ -74,11 +74,23 @@
         android:fontFamily="monospace"/>
 
     <TextView
-        android:id="@id/player_box"
+    android:id="@id/player_box"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="410sp"
+    android:text="@string/playerShow"
+    android:layout_centerHorizontal="true"
+    android:textSize="30sp"
+    android:textAlignment="center"
+    android:freezesText="true"
+    android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@id/situation_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="410sp"
-        android:text="@string/playerShow"
+        android:layout_marginTop="80sp"
+        android:text="@string/situationShow"
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:textAlignment="center"

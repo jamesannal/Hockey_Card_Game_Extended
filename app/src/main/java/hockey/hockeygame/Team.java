@@ -30,6 +30,46 @@ class Team {
         return total;
     }
 
+    public int getTeamStickhandling() {
+        int total = 0;
+        for (Card card : cards) {
+            total += card.getPlayerStickhandling();
+        }
+        return total;
+    }
+
+    public int getTeamShot() {
+        int total = 0;
+        for (Card card : cards) {
+            total += card.getPlayerShooting();
+        }
+        return total;
+    }
+
+    public int getTeamChecking() {
+        int total = 0;
+        for (Card card : cards) {
+            total += card.getPlayerChecking();
+        }
+        return total;
+    }
+
+    public int getTeamStrength() {
+        int total = 0;
+        for (Card card : cards) {
+            total += card.getPlayerStrength();
+        }
+        return total;
+    }
+
+    public int getTeamSkating() {
+        int total = 0;
+        for (Card card : cards) {
+            total += card.getPlayerSkating();
+        }
+        return total;
+    }
+
     public ArrayList<Card> getCards() {
         return cards;
     }
@@ -45,7 +85,6 @@ class Team {
         }
         return stringifiedCards;
     }
-
 
 
 }
