@@ -294,4 +294,215 @@ public class Game {
 //        Log.d(getClass().toString(), result);
         return result;
     }
+
+    public String glass(){
+        findGlass();
+        history.showResults();
+        String result = findGlass();
+        return result;
+    }
+
+    public String findGlass() {
+
+        if ( this.situation.getMoveName().toString() == "DEKE"){
+            return glassDeke();
+        } else if ( this.situation.getMoveName().toString() == "POKECHECK"){
+            return glassPokecheck();
+        } else if ( this.situation.getMoveName().toString() == "STICKLIFT"){
+            return glassSticklift();
+        } else if ( this.situation.getMoveName().toString() == "WINDMILL"){
+            return glassWindmill();
+        } else if ( this.situation.getMoveName().toString() == "SLAPSHOT"){
+            return glassSlapshot();
+        } else if ( this.situation.getMoveName().toString() == "SHOTBLOCK"){
+            return glassShotblock();
+        } else if ( this.situation.getMoveName().toString() == "BREAKAWAY"){
+            return glassBreakaway();
+        } else if ( this.situation.getMoveName().toString() == "BODYCHECK"){
+            return glassBodycheck();
+        } else if ( this.situation.getMoveName().toString() == "BACKCHECK"){
+            return glassBackcheck();
+        } else if ( this.situation.getMoveName().toString() == "POWERMOVE"){
+            return glassPowermove();
+        }
+        else {
+            return ("You're a wizard!");
+        }
+    }
+
+    public String glassPowermove() {
+        findGlassPowermove();
+        history.showResults();
+        String result = findGlassPowermove();
+        return result;
+    }
+
+    public String glassBackcheck() {
+        findGlassBackcheck();
+        history.showResults();
+        String result = findGlassBackcheck();
+        return result;
+    }
+
+    public String glassBodycheck() {
+        findGlassBodycheck();
+        history.showResults();
+        String result = findGlassBodycheck();
+        return result;
+    }
+
+    public String glassBreakaway() {
+        findGlassBreakaway();
+        history.showResults();
+        String result = findGlassBreakaway();
+        return result;
+    }
+
+    public String glassShotblock() {
+        findGlassShotblock();
+        history.showResults();
+        String result = findGlassShotblock();
+        return result;
+    }
+
+    public String glassSlapshot() {
+        findGlassSlapshot();
+        history.showResults();
+        String result = findGlassSlapshot();
+        return result;
+    }
+
+    public String glassWindmill() {
+        findGlassWindmill();
+        history.showResults();
+        String result = findGlassWindmill();
+        return result;
+    }
+
+    public String glassSticklift() {
+        findGlassSticklift();
+        history.showResults();
+        String result = findGlassSticklift();
+        return result;
+    }
+
+    public String glassPokecheck() {
+        findGlassPokecheck();
+        history.showResults();
+        String result = findGlassPokecheck();
+        return result;
+    }
+
+    public String glassDeke() {
+        findGlassDeke();
+        history.showResults();
+        String result = findGlassDeke();
+        return result;
+    }
+
+    public String findGlassDeke() {
+        if (user1.getRosterStickhandling() + user1.getRosterShot() - computer.getRosterStickhandling() - computer.getRosterChecking() >= 0) {
+            System.out.println("Yay!!!");
+            return ("You could've had him!");
+        } else {
+            System.out.println("Boo!!!");
+            return ("Good choice!");
+        }
+    }
+    public String findGlassPokecheck() {
+        if (user1.getRosterStickhandling() + user1.getRosterChecking() - computer.getRosterStickhandling() - computer.getRosterShot() >= 0) {
+            System.out.println("Yay!!!");
+            return ("You could've had him!");
+        } else {
+            System.out.println("Boo!!!");
+            return ("Good choice!");
+        }
+    }
+
+    public String findGlassSticklift() {
+        if (user1.getRosterStickhandling() + user1.getRosterStrength() - computer.getRosterStrength() - computer.getRosterSkating() >= 0) {
+            System.out.println("Yay!!!");
+            return ("You could've had him!");
+        } else {
+            System.out.println("Boo!!!");
+            return ("Good choice!");
+        }
+    }
+
+    public String findGlassWindmill() {
+        if (user1.getRosterStickhandling() + user1.getRosterSkating() - computer.getRosterChecking() - computer.getRosterStrength() >= 0) {
+            System.out.println("Yay!!!");
+            return ("You could've had him!");
+        } else {
+            System.out.println("Boo!!!");
+            return ("Good choice!");
+        }
+    }
+
+    public String findGlassSlapshot() {
+        if (user1.getRosterShot() + user1.getRosterShot() + user1.getRosterStrength() - computer.getRosterShot() - computer.getRosterChecking() >= 0) {
+            System.out.println("Yay!!!");
+            return ("You could've had him!");
+        } else {
+            System.out.println("Boo!!!");
+            return ("Good choice!");
+        }
+    }
+
+    public String findGlassShotblock() {
+        if (user1.getRosterShot() + user1.getRosterShot() + user1.getRosterChecking() - computer.getRosterShot() - computer.getRosterStrength() >= 0) {
+            System.out.println("Yay!!!");
+            return ("You could've had him!");
+        } else {
+            System.out.println("Boo!!!");
+            return ("Good choice!");
+        }
+    }
+
+    public String findGlassBreakaway() {
+        if (user1.getRosterShot() + user1.getRosterSkating() - computer.getRosterChecking() - computer.getRosterSkating() >= 0){
+            System.out.println("Yay!!!");
+            return("You could've had him!");
+        }
+        else {
+            System.out.println("Boo!!!");
+            return("Good choice!");
+        }
+    }
+
+
+    public String findGlassBodycheck() {
+        if (user1.getRosterChecking() + user1.getRosterStrength() - computer.getRosterSkating() - computer.getRosterStickhandling()>= 0){
+            System.out.println("Yay!!!");
+            return("You could've had him!");
+        }
+        else {
+            System.out.println("Boo!!!");
+            return("Good choice!");
+        }
+    }
+
+    public String findGlassBackcheck() {
+        if (user1.getRosterChecking() + user1.getRosterSkating() - computer.getRosterShot() - computer.getRosterSkating()>= 0){
+            System.out.println("Yay!!!");
+            return("You could've had him!");
+        }
+        else {
+            System.out.println("Boo!!!");
+            return("Good choice!");
+        }
+    }
+
+    public String findGlassPowermove() {
+        if (user1.getRosterStrength() + user1.getRosterSkating() - computer.getRosterStrength() - computer.getRosterStickhandling()>= 0){
+            System.out.println("Yay!!!");
+            return("You could've had him!");
+        }
+        else {
+            System.out.println("Boo!!!");
+            return("Good choice!");
+        }
+    }
+
 }
+

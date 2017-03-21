@@ -186,4 +186,174 @@ public class GameTest {
         user.draftCardToTeam(card2);
         assertEquals("You forgot the puck!", game.playDeke());
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @Test
+    public void CanPlayGlassDeke(){
+        assertEquals("You could've had him!", game.glassDeke());
+    }
+
+    @Test
+    public void CanPlayGlassPokecheck(){
+        assertEquals("You could've had him!", game.glassPokecheck());
+    }
+
+    @Test
+    public void CanPlayGlassSticklift(){
+        assertEquals("You could've had him!", game.glassSticklift());
+    }
+
+    @Test
+    public void CanPlayGlassWindmill(){
+        assertEquals("You could've had him!", game.glassWindmill());
+    }
+
+    @Test
+    public void CanPlayGlassSlapshot(){
+        assertEquals("You could've had him!", game.glassSlapshot());
+    }
+
+    @Test
+    public void CanPlayGlassShotblock(){
+        assertEquals("You could've had him!", game.glassShotblock());
+    }
+
+    @Test
+    public void CanPlayGlassBreakaway(){
+        assertEquals("You could've had him!", game.glassBreakaway());
+    }
+
+    @Test
+    public void canPlayGlassBodycheck(){
+        assertEquals("You could've had him!", game.glassBodycheck());
+    }
+
+    @Test
+    public void canPlayGlassBackcheck(){
+        assertEquals("You could've had him!", game.glassBackcheck());
+    }
+
+    @Test
+    public void CanPlayGlassPowerMove(){
+        assertEquals("You could've had him!", game.glassPowermove());
+    }
+
+    @Test
+    public void canLoseGlassBackcheck(){
+        computer.getTeam().getCards().remove(0);
+        user.getTeam().getCards().remove(0);
+
+        computer.draftCardToTeam(card3);
+        user.draftCardToTeam(card2);
+        assertEquals("Good choice!", game.glassBackcheck());
+    }
+
+    @Test
+    public void canLoseGlassPowermove(){
+        computer.getTeam().getCards().remove(0);
+        user.getTeam().getCards().remove(0);
+
+        computer.draftCardToTeam(card3);
+        user.draftCardToTeam(card2);
+        assertEquals("Good choice!", game.glassPowermove());
+    }
+
+    @Test
+    public void canLoseGlassBodycheck(){
+        computer.getTeam().getCards().remove(0);
+        user.getTeam().getCards().remove(0);
+
+        computer.draftCardToTeam(card3);
+        user.draftCardToTeam(card2);
+        assertEquals("Good choice!", game.glassBodycheck());
+    }
+
+    @Test
+    public void canLoseGlassBreakaway(){
+        computer.getTeam().getCards().remove(0);
+        user.getTeam().getCards().remove(0);
+
+        computer.draftCardToTeam(card3);
+        user.draftCardToTeam(card2);
+        assertEquals("Good choice!", game.glassBreakaway());
+    }
+
+    @Test
+    public void canLoseGlassShotblock(){
+        computer.getTeam().getCards().remove(0);
+        user.getTeam().getCards().remove(0);
+
+        computer.draftCardToTeam(card3);
+        user.draftCardToTeam(card2);
+        assertEquals("Good choice!", game.glassShotblock());
+    }
+
+    @Test
+    public void canLoseGlassSlapshot(){
+        computer.getTeam().getCards().remove(0);
+        user.getTeam().getCards().remove(0);
+
+        computer.draftCardToTeam(card3);
+        user.draftCardToTeam(card2);
+        assertEquals("Good choice!", game.glassSlapshot());
+    }
+
+    @Test
+    public void canLoseGlassWindmill(){
+        computer.getTeam().getCards().remove(0);
+        user.getTeam().getCards().remove(0);
+
+        computer.draftCardToTeam(card3);
+        user.draftCardToTeam(card2);
+        assertEquals("Good choice!", game.glassWindmill());
+    }
+
+    @Test
+    public void canLoseGlassSticklift(){
+        computer.getTeam().getCards().remove(0);
+        user.getTeam().getCards().remove(0);
+
+        computer.draftCardToTeam(card3);
+        user.draftCardToTeam(card2);
+        assertEquals("Good choice!", game.glassSticklift());
+    }
+
+    @Test
+    public void canLoseGlassPokecheck(){
+        computer.getTeam().getCards().remove(0);
+        user.getTeam().getCards().remove(0);
+
+        computer.draftCardToTeam(card3);
+        user.draftCardToTeam(card2);
+        assertEquals("Good choice!", game.glassPokecheck());
+    }
+
+    @Test
+    public void canLoseGlassDeke(){
+        computer.getTeam().getCards().remove(0);
+        user.getTeam().getCards().remove(0);
+
+        computer.draftCardToTeam(card3);
+        user.draftCardToTeam(card2);
+        assertEquals("Good choice!", game.glassDeke());
+    }
 }
