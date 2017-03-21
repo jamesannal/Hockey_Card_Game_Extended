@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 /**
  * Created by user on 18/03/2017.
  */
@@ -22,8 +20,10 @@ public class GameActivity extends AppCompatActivity {
     TextView situationShow;
     Team userTeam = new Team();
     Team computerTeam = new Team();
+//    Move move = new Move();
+//    Situation situation = new Situation(move);
     Game game = new Game("You", "Opponent", userTeam, computerTeam);
-    private ArrayList<Situation> situations;
+//    private ArrayList<Situation> situations;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -38,20 +38,7 @@ public class GameActivity extends AppCompatActivity {
 //        Log.d(getClass().toString(), "onCreate called");
     }
 
-    public void onDraftButtonPressed(View button) {
-        Log.d(getClass().toString(), draftCard.getText().toString());
-        userTeam.getCards().clear();
-        computerTeam.getCards().clear();
-        game.setUpGame();
-        String dealresult = game.deal();
-        Move moveResult = game.takeInSituation().getMoveName();
-        situationShow.setText(moveResult.toString());
-        Log.d("situation", moveResult.toString());
 
-        Log.d("game.deal result", dealresult);
-        playerShow.setText(dealresult);
-        show.setText("");
-    }
 
     public void onTakeThemOnButtonPressed(View button) {
         String result = game.play();
@@ -71,7 +58,7 @@ public class GameActivity extends AppCompatActivity {
         String result = game.deal();
         Log.d("game.deal result", result);
         playerShow.setText(result);
-        show.setText("");
+        show.setText("Safety First");
         Move moveResult = game.takeInSituation().getMoveName();
         situationShow.setText(moveResult.toString());
         Log.d("situation", moveResult.toString());

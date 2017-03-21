@@ -9,7 +9,7 @@ enum Move {
     POKECHECK("Pokecheck"),
     STICKLIFT("Sticklift"),
     WINDMILL("Windmill Deke"),
-    BATTLE("Net Battle"),
+    SHOTBLOCK("Shot Block"),
     SLAPSHOT("Slapshot"),
     BREAKAWAY("Breakaway"),
     BODYCHECK("Bodycheck"),
@@ -17,11 +17,14 @@ enum Move {
     POWERMOVE("Powermove");
 
 
+
 public String movename;
 
-        Move(String movename) {
+    Move(String movename) {
         this.movename = movename;
 
-        }
+    }
 };
+
+
 

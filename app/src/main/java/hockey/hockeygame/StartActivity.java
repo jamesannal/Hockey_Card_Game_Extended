@@ -57,19 +57,45 @@ public class StartActivity extends AppCompatActivity {
 //
 //        return super.onOptionsItemSelected(item);
 //    }
+
+
+
+
+
+//    public void onDraftButtonPressed(View button) {
+//        startActivity(intent);
+//        Log.d(getClass().toString(), draftCard.getText().toString());
+//        userTeam.getCards().clear();
+//        computerTeam.getCards().clear();
+//        game.setUpGame();
+//        String result2 = game.deal();
+//
+//        Log.d("game.deal result", result2);
+//        playerShow.setText(result2);
+//        show.setText("");
+//
+//
+//    }
+
+
+
+
+
     public void onDraftButtonPressed(View button) {
         startActivity(intent);
         Log.d(getClass().toString(), draftCard.getText().toString());
         userTeam.getCards().clear();
         computerTeam.getCards().clear();
         game.setUpGame();
-        String result2 = game.deal();
+        String dealresult = game.deal();
 
-        Log.d("game.deal result", result2);
-        playerShow.setText(result2);
+        Move moveResult = game.takeInSituation().getMoveName();
+//        situationShow.setText(moveResult.toString());
+        Log.d("situation", moveResult.toString());
+
+        Log.d("game.deal result", dealresult);
+        playerShow.setText(dealresult);
         show.setText("");
-
-
     }
 
 //    public void onTakeThemOnButtonPressed(View button) {

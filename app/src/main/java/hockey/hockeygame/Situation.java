@@ -37,20 +37,9 @@ public class Situation {
         }
     }
 
-    Situation takeInSituation(Move move) {
-        setUpSituation();
-        randomise();
-        return situations.get(0);
-    }
-
-    public ArrayList<String> getSituationStringified(){
-        ArrayList<String> stringifiedSituations = new ArrayList<>();
-        for(Situation situation : situations){
-            String answer = situation.getMoveName().toString().toLowerCase();
-            answer = answer.substring(0,1).toUpperCase() + answer.substring(1).toLowerCase();
-            stringifiedSituations.add(answer);
-
-        }
-        return stringifiedSituations;
-    }
+//    Situation takeInSituation(Move move) {
+//        setUpSituation();
+//        randomise();
+//        return situations.get(0);
+//    }
 }

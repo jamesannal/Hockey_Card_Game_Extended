@@ -11,7 +11,7 @@ public enum Player {
     STAMKOS(96, 90, 97, 60, 65, 95),
     BENN(95, 85, 90, 76, 96, 87),
     HENRIK(94, 86, 78, 70, 86, 54),
-    KANE(93, 99, 90, 60, 20, 99),
+    KANE(93, 99, 90, 30, 20, 99),
     DOUGHTY(92, 70, 87, 90, 86, 84),
     KOPITAR(91, 80, 89, 95, 84, 82),
     TARASENKO(90, 97, 85, 59, 65, 90),
@@ -103,7 +103,7 @@ public enum Player {
     THORBURN(4, 2, 1, 7, 67, 12),
     BOLL(3, 3, 2, 9, 94, 3),
     JONES(2, 1, 3, 2, 90, 2),
-    GLASS(1, 1, 1, 80, 70, 3);
+    GLASS(1, 1, 1, 50, 50, 3);
 
     public int value;
     public int stickhandling;

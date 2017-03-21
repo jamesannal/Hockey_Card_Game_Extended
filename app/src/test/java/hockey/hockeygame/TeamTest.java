@@ -45,4 +45,28 @@ public class TeamTest {
         assertEquals(89, team.getRosterScore());
     }
 
+    @Test
+    public void canCheckRosterStickhandling() {
+        assertEquals(70, team.getTeamStickhandling());
+    }
+
+    @Test
+    public void canCheckRosterShot() {
+        assertEquals(79, team.getTeamShot());
+    }
+
+    @Test
+    public void canCheckRosterStrength() {
+        assertEquals(83, team.getTeamStrength());
+    }
+
+    @Test
+    public void canCheckRosterChecking() {
+        assertEquals(87, team.getTeamChecking());
+    }
+
+    @Test
+    public void canCheckRosterSkating() {
+        assertEquals(90, team.getTeamSkating());
+    }
 }

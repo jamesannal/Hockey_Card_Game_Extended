@@ -6,8 +6,8 @@ package hockey.hockeygame;
 
 class User {
 
-    private String name;
-    private Team team;
+    public String name;
+    public Team team;
 
     User(String name, Team team) {
         this.name = name;

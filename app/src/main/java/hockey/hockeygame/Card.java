@@ -6,9 +6,9 @@ package hockey.hockeygame;
 
 class Card {
     private final Player playername;
-    private int shot;
     private int value;
     private int stickhandling;
+    private int shot;
     private int checking;
     private int strength;
     private int skating;
