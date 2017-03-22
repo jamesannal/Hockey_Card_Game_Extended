@@ -75,7 +75,7 @@
     android:id="@id/player_box"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="250sp"
+    android:layout_marginTop="280sp"
     android:text="@string/playerShow"
     android:layout_centerHorizontal="true"
     android:textSize="40sp"

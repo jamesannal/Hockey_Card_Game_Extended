@@ -113,7 +113,7 @@ public class Game {
         if (user1.getRosterStickhandling() + user1.getRosterStrength() - computer.getRosterStrength() - computer.getRosterSkating() >= 0) {
             return ("Tied him up beautifully!");
         } else {
-            return ("Called for hooking!");
+            return ("Called for slashing!");
         }
     }
 

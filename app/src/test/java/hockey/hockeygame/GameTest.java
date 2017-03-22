@@ -83,9 +83,7 @@ public class GameTest {
     }
 
     @Test
-    public void CanPlayPowerMove(){
-        assertEquals("You went hard and scored!", game.playPowermove());
-    }
+    public void CanPlayPowerMove(){assertEquals("You went hard and scored!", game.playPowermove());}
 
     @Test
     public void canLoseBackcheck(){
@@ -164,7 +162,7 @@ public class GameTest {
 
         computer.draftCardToTeam(card3);
         user.draftCardToTeam(card2);
-        assertEquals("Called for hooking!", game.playSticklift());
+        assertEquals("Called for slashing!", game.playSticklift());
     }
 
     @Test

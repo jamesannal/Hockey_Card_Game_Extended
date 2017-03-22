@@ -1,6 +1,5 @@
 package hockey.hockeygame;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -27,7 +26,6 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        Intent intent = getIntent();
         game.setUpGame();
         String dealresult = game.deal();
 
@@ -39,7 +37,7 @@ public class GameActivity extends AppCompatActivity {
 
         playerShow = (TextView) findViewById(player_box);
         playerShow.setText(dealresult);
-        
+
         situationShow = (TextView) findViewById(situation_box);
         situationShow.setText("You need to do a: " + moveResult.toString());
     }
@@ -51,7 +49,7 @@ public class GameActivity extends AppCompatActivity {
         String dealresult = game.deal();
         playerShow.setText(dealresult);
         Move moveResult = game.takeInSituation().getMoveName();
-        situationShow.setText("You need to do a: " +moveResult.toString());
+        situationShow.setText("You need to do a: " + moveResult.toString());
     }
 
     public void onOffTheGlassButtonPressed(View button) {
