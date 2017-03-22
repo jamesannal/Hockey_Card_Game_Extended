@@ -2,7 +2,7 @@
     <string name="app_name">Hockey Card Game</string>
     <string name="action_settings">Settings</string>
     <string name="title"> The Hockey Card Game</string>
-    <string name="game_explain">Press the draft button to draft two players. Your opponent will simultaneously draft two players to play against you. If you think you have superior players press play to see if you win. Press draft again if you aren\'t feeling confident about the result.</string>
+    <string name="game_explain">Press the draft button to embody a player in an in-game situation. Your opponent will simultaneously draft a player to play against you. If you think your player can defeat the computer player in this in game situation press play to see if you are correct. If you aren\'t feeling confident about the result, just hit the Off the Glass button to prove your cowardice. You\'ll get a message to tell you if you were correct to dump the puck.</string>
     <string name="draft_your_player">DRAFT</string>
     <string name="show">""</string>
     <string name="playerShow">""</string>

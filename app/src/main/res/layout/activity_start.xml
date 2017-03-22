@@ -20,14 +20,19 @@
         android:freezesText="true"
         android:fontFamily="monospace"/>
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kassian"
+        android:paddingTop="585sp"/>
 
     <TextView
         android:id="@+id/title_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2sp"
+        android:layout_width="600sp"
+        android:layout_height="70sp"
+        android:layout_marginTop="0sp"
         android:text="@string/title"
-        android:textSize="35sp"
+        android:textSize="45sp"
         android:paddingLeft="5sp"
         android:paddingRight="5sp"
         android:background="@color/colorPrimary"
@@ -36,22 +41,23 @@
 
     <TextView
         android:id="@+id/game_explain"
-        android:layout_width="wrap_content"
+        android:paddingLeft="40sp"
+        android:layout_width="570sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70sp"
         android:text="@string/game_explain"
         android:textSize="30sp"
-        />
+        android:gravity="fill" />
 
 
     <Button
         android:id="@+id/draft_card"
         android:text="@string/draft_your_player"
         android:onClick="onDraftButtonPressed"
-        android:layout_width="250sp"
-        android:layout_height="100sp"
+        android:layout_width="600sp"
+        android:layout_height="90sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300sp"
+        android:layout_marginTop="500sp"
         android:textSize="50sp"
         android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/white"

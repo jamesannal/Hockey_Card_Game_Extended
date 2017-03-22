@@ -60,25 +60,11 @@ public class Game {
             card = draftPool.dealCard(user);
             history.add(card.toString());
             System.out.println(user.getUserName() + " received " + card.getPlayerDisplay() + "");
-//
-//            card = draftPool.dealCard(user);
-//            history.add(card.toString());
-//            System.out.println(user.getUserName() + " received " + card.getPlayerDisplay() + "");
-        }
-        return ("" + user1.getUserName() + " received: " + "\r\n" + user1.getTeam().getCardStringified()
-                + "\r\n " + "\r\n" + "" + computer.getUserName() + " received: " + "\r\n" +
+       }
+        return ("" + user1.getUserName() + " have embodied: " + "\r\n" + user1.getTeam().getCardStringified()
+                + "\r\n " + "\r\n" + " You are facing: " + "\r\n" +
                 computer.getTeam().getCardStringified() + "").replaceAll("\\[|\\]", "");
     }
-
-//    private String findWinner() {
-//        if (user1.getTotalValue() - computer.getTotalValue() >= 0) {
-//            System.out.println("Yay!!!");
-//            return ("You win!");
-//        } else {
-//            System.out.println("Boo!!!");
-//            return ("You lose!");
-//        }
-//    }
 
     private String findWinner() {
         if ( this.situation.getMoveName().toString() == "DEKE"){
@@ -109,7 +95,7 @@ public class Game {
 
     private String findWinnerDeke() {
         if (user1.getRosterStickhandling() + user1.getRosterShot() - computer.getRosterStickhandling() - computer.getRosterChecking() >= 0) {
-            return ("You deked him out his jock!");
+            return ("Deked him out his jock!");
         } else {
             return ("You forgot the puck!");
         }
@@ -117,7 +103,7 @@ public class Game {
 
     private String findWinnerPokecheck() {
         if (user1.getRosterStickhandling() + user1.getRosterChecking() - computer.getRosterStickhandling() - computer.getRosterShot() >= 0) {
-            return ("Great last ditch pokecheck!");
+            return ("Stripped the puck!");
         } else {
             return ("Called for tripping!");
         }
@@ -127,7 +113,7 @@ public class Game {
         if (user1.getRosterStickhandling() + user1.getRosterStrength() - computer.getRosterStrength() - computer.getRosterSkating() >= 0) {
             return ("Tied him up beautifully!");
         } else {
-            return ("You got called for hooking!");
+            return ("Called for hooking!");
         }
     }
 
@@ -141,7 +127,7 @@ public class Game {
 
     private String findWinnerSlapShot () {
         if (user1.getRosterShot() + user1.getRosterShot() + user1.getRosterStrength() - computer.getRosterShot() - computer.getRosterChecking() >= 0) {
-            return ("You beat the goalie clean!");
+            return ("Beat the goalie clean!");
         } else {
             return ("You're a shinpad sniper!");
         }
@@ -149,7 +135,7 @@ public class Game {
 
     private String findWinnerShotblock () {
         if (user1.getRosterShot() + user1.getRosterShot() + user1.getRosterChecking() - computer.getRosterShot() - computer.getRosterStrength() >= 0) {
-            return ("You took one for the team!");
+            return ("Took one for the team!");
         } else {
             return ("Get in the shooting lane!");
         }

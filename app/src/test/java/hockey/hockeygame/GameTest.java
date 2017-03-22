@@ -39,12 +39,12 @@ public class GameTest {
 
     @Test
     public void CanPlayDeke(){
-        assertEquals("You deked him out his jock!", game.playDeke());
+        assertEquals("Deked him out his jock!", game.playDeke());
     }
 
     @Test
     public void CanPlayPokecheck(){
-        assertEquals("Great last ditch pokecheck!", game.playPokecheck());
+        assertEquals("Stripped the puck!", game.playPokecheck());
     }
 
     @Test
@@ -59,12 +59,12 @@ public class GameTest {
 
     @Test
     public void CanPlaySlapshot(){
-        assertEquals("You beat the goalie clean!", game.playSlapshot());
+        assertEquals("Beat the goalie clean!", game.playSlapshot());
     }
 
     @Test
     public void CanPlayShotblock(){
-        assertEquals("You took one for the team!", game.playShotblock());
+        assertEquals("Took one for the team!", game.playShotblock());
     }
 
     @Test
@@ -164,7 +164,7 @@ public class GameTest {
 
         computer.draftCardToTeam(card3);
         user.draftCardToTeam(card2);
-        assertEquals("You got called for hooking!", game.playSticklift());
+        assertEquals("Called for hooking!", game.playSticklift());
     }
 
     @Test
