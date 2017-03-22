@@ -54,7 +54,4 @@ class User {
         return team.getTeamSkating();
     }
 
-//    public void showPlayers() {
-//        for (Card card : getTeam().getCards());
-//    }
 }

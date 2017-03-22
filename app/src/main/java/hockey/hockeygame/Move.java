@@ -16,13 +16,10 @@ enum Move {
     BACKCHECK("Backcheck"),
     POWERMOVE("Powermove");
 
-
-
 public String movename;
 
     Move(String movename) {
         this.movename = movename;
-
     }
 };
 

@@ -11,7 +11,7 @@ public class Game {
 
     private DraftPool draftPool;
     private ArrayList<User> users;
-    private Move move;
+//    private Move move;
     private User user1;
     private User computer;
     private History history;
@@ -173,7 +173,7 @@ public class Game {
             return("You went hard and scored!");
         }
         else {
-            return("You lost the puck!");
+            return("You lost an edge!");
         }
     }
 

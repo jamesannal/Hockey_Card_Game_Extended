@@ -104,7 +104,7 @@ public class GameTest {
 
         computer.draftCardToTeam(card3);
         user.draftCardToTeam(card2);
-        assertEquals("You lost the puck!", game.playPowermove());
+        assertEquals("You lost an edge!", game.playPowermove());
     }
 
     @Test

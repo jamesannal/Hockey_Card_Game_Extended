@@ -8,23 +8,11 @@
     android:fontFamily="monospace"
     tools:context="hockey.hockeygame.StartActivity">
 
-    <TextView
-        android:id="@id/situation_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80sp"
-        android:text="@string/situationShow"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        android:freezesText="true"
-        android:fontFamily="monospace"/>
-
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/kassian"
-        android:paddingTop="585sp"/>
+        android:paddingTop="585sp" />
 
     <TextView
         android:id="@+id/title_text"
@@ -41,7 +29,9 @@
 
     <TextView
         android:id="@+id/game_explain"
-        android:paddingLeft="40sp"
+        android:paddingLeft="25sp"
+        android:paddingStart="25sp"
+        android:paddingEnd="25sp"
         android:layout_width="570sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70sp"
@@ -66,62 +56,6 @@
         android:bottomLeftRadius="10dp"
         android:topLeftRadius="10dp"
         android:topRightRadius="10dp"
-        android:padding="10dp"
-
-        />
-
-    <!--<Button-->
-        <!--android:id="@+id/play_them"-->
-        <!--android:text="@string/play_them"-->
-        <!--android:onClick="onTakeThemOnButtonPressed"-->
-        <!--android:layout_width="250sp"-->
-        <!--android:layout_height="180sp"-->
-        <!--android:layout_marginLeft="10sp"-->
-        <!--android:layout_marginStart="10sp"-->
-        <!--android:layout_marginTop="650sp"-->
-        <!--android:textSize="50sp"-->
-        <!--android:background="@color/colorPrimaryDark"-->
-        <!--android:textColor="@android:color/white"-->
-        <!--android:fontFamily="monospace"-->
-        <!--/>-->
-
-    <!--<Button-->
-        <!--android:id="@+id/off_the_glass"-->
-        <!--android:text="@string/off_the_glass"-->
-        <!--android:onClick="onOffTheGlassButtonPressed"-->
-        <!--android:layout_width="250sp"-->
-        <!--android:layout_height="180sp"-->
-        <!--android:layout_marginLeft="300sp"-->
-        <!--android:layout_marginStart="300sp"-->
-        <!--android:layout_marginTop="650sp"-->
-        <!--android:textSize="50sp"-->
-        <!--android:background="@color/colorPrimaryDark"-->
-        <!--android:textColor="@android:color/white"-->
-        <!--android:fontFamily="monospace"-->
-        <!--/>-->
-
-    <TextView
-        android:id="@id/result_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="590sp"
-        android:text="@string/show"
-        android:layout_centerHorizontal="true"
-        android:textSize="60sp"
-        android:freezesText="true"
-        android:fontFamily="monospace"/>
-
-    <TextView
-        android:id="@id/player_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="410sp"
-        android:text="@string/playerShow"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        android:freezesText="true"
-        android:fontFamily="monospace"/>
-
+        android:padding="10dp" />
 
 </RelativeLayout>
