@@ -187,26 +187,6 @@ public class GameTest {
         assertEquals("You forgot the puck!", game.playDeke());
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @Test
     public void CanPlayGlassDeke(){
         assertEquals("You could've had him!", game.glassDeke());
